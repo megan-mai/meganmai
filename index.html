@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="websiteContainer">
+
+    <div class="header">
+      <div id="name">
+        Megan Mai
+      </div>
+      <a href="#footer" id="contact" class="button" >Contact</a>
+    </div>
+
+    <div class="bio">
+      <p>SF-based UX designer and front-end developer interested in creating engaging interactive experiences. Fascinated by aesthetic trend cycles as a means to transcend commerical gimmickry.
+        <button id="more" class="button" onclick="toggleText()" >More →</button> <a href="#gallery" id="myWork" class="button">My Work ↓</a>
+      </p>
+      <div id="hidden">I received a B.S. in Cognitive Science with a specialization in computing from UCLA in 2021, where I studied visual perception, comparative judgment, and bayesian statistics.
+      </div>
+    </div>
+
+    <div id="gallery" class="myGallery">
+
+      <!-- craftili -->
+      <div class="item" id="craftili">
+        <span style="cursor:pointer" onclick="openNav('craftiliOverlay')">
+          <img class="static" src="grey5.png" />
+          <video class="active'" class="myGallery" loop autoplay>
+            <source src="craftili_final.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <div class="leftCaption">
+              <span class="title">craftili.com</span> <br> <span class="category">User Interface Design</span>
+            </div>
+            <div class="rightCaption">
+              2021
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div id="craftiliOverlay" class="overlay">
+        <div class="overlayHeader">
+          <button id="prototypeButton" type="button" class="overlayNav" onclick="toggleImg('craftiliImg','prototype')">prototype</button>
+          <button type="button" class="overlayNav" onclick="toggleImg('craftiliImg','final')">final</button>
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav('craftiliOverlay')">close project</a>
+        </div>
+        <div class="overlay-content">
+          <div class="overview">
+            <p>craftili, 2021</p>
+            <br>
+            <p>goals ↓</p>
+            <p>craftili is an online marketplace for customizable products. The client’s approach prioritized humanizing online transactions, bridging the gap between creator and consumer.
+              My aim was to design a landing page that explained the platform’s features and goals while maintaining accessibility. This page would be active prior to and during the launch of the platform.
+            </p>
+            <br>
+
+            <p>process ↓</p>
+            <p>Bespoke items are typically associated with affluence and thus exclusivity, so it was important that the design not come across as too cold or luxurious. At the same time, I was aware that the target demographic would be a ‘hip’
+              crowd
+              whose sensibilities would not be catered to by existing cookie-cutter retailers. With this in mind, I ensured that the design was modern, clean, and neutral. I figured that the featured sellers on the site would be apt appeal to the
+              fringe
+              interests of potential users (the sellers are not pictured in the displays above), and that an understated design would do best for a marketplace-style platform.
+              Because the core concept of the platform is not radically new, my approach to novel appeal relied more on visual tactics. This is why I decided to employ a video background. It is both optically stimulating, and also conveys the
+              company’s
+              emphasis on humanity and craftsmanship. I stitched together a montage of stock photos to send to the client, and then remotely directed the filming process of the actual featured clients. Similarly, I implemented parallax motion on
+              scroll.
+            </p>
+            <br>
+            <p>note ↓</p>
+            <p> *I did not develop the website for craftili.
+            </p>
+          </div>
+
+          <div class="wrap">
+            <a href="https://craftili.com/" id="link">craftili.com ↗</a>
+            <img class="craftiliImg" id="prototype" src="Screen Shot 2022-02-24 at 3.40.24 PM.png">
+            <video class="craftiliImg" id="final" loop autoplay>
+              <source src="craftili_final.mp4" type="video/mp4">
+            </video>
+            <span class="hidden_overview">
+              <p>craftili, 2021</p>
+              <br>
+              <p>goals ↓</p>
+              <p>craftili is an online marketplace for customizable products. The client’s approach prioritized humanizing online transactions, bridging the gap between creator and consumer.
+                My aim was to design a landing page that explained the platform’s features and goals while maintaining accessibility. This page would be active prior to and during the launch of the platform.
+              </p>
+              <br>
+
+              <p>process ↓</p>
+              <p>Bespoke items are typically associated with affluence and thus exclusivity, so it was important that the design not come across as too cold or luxurious. At the same time, I was aware that the target demographic would be a ‘hip’
+                crowd
+                whose sensibilities would not be catered to by existing cookie-cutter retailers. With this in mind, I ensured that the design was modern, clean, and neutral. I figured that the featured sellers on the site would be apt appeal to the
+                fringe
+                interests of potential users (the sellers are not pictured in the displays above), and that an understated design would do best for a marketplace-style platform.
+                Because the core concept of the platform is not radically new, my approach to novel appeal relied more on visual tactics. This is why I decided to employ a video background. It is both optically stimulating, and also conveys the
+                company’s
+                emphasis on humanity and craftsmanship. I stitched together a montage of stock photos to send to the client, and then remotely directed the filming process of the actual featured clients. Similarly, I implemented parallax motion on
+                scroll.
+              </p>
+              <br>
+              <p>note ↓</p>
+              <p> *I did not develop the website for craftili.
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STC @ UCLA -->
+      <div class="item" id="STC">
+        <span style="cursor:pointer" onclick="openNav('stcOverlay')">
+          <div class="square">
+            <img class="static" src=" stcucla.jpg" />
+            <img class="active" src="stcucla.gif" />
+          </div>
+          <div class="caption">
+            <div class="leftCaption">
+              <span class="title">STC @ UCLA</span> <br> <span class="category">Design</span>
+            </div>
+            <div class="rightCaption">
+              2021
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div id="stcOverlay" class="overlay">
+        <div class="overlayHeader">
+          <button id="prototypeButton" type="button" class="overlayNav" onclick="toggleImg('stcImg','prototype')">branding</button>
+          <button type="button" class="overlayNav" onclick="toggleImg('stcImg','final')">final</button>
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav('stcOverlay')">close project</a>
+        </div>
+        <div class="overlay-content">
+          <div class="overview">
+            <p>STC @ UCLA, 2021</p>
+            <br>
+            <p>overview ↓</p>
+            <p>I was tasked with redesigning the website and branding for the STEM transfer community at UCLA. I worked with the existing site, which was hosted on WIX, to improve the user experience and to modernize the org’s visual identity.
+              <p />
+              <br>
+
+            <p>process ↓</p>
+            <p>There were two constraints I worked under: I was required to keep the website on WIX, and I had to adhere to UCLA’s branding principles. The former made the process easier, as I enjoy designing with limitations and adapting an old
+              aesthetic into a new form. This was not the case for the latter; I found that WIX as a site builder presented limitations in areas I did not appreciate- I found myself unable to flexibly design the site structure and found that I
+              couldn't exactly implement the UX system I had in mind for the organization.
+            </p>
+            <br>
+            <p>note ↓</p>
+            <p>I also created graphics for various social media accounts, and redesigned the org's logos using typefaces from velvetyne.</p>
+
+            </p>
+          </div>
+
+          <div class="wrap">
+            <a href="https://uclastemtransfer.wixsite.com/stc-ucla" id="link">uclastemtransfer.wixsite.com ↗</a>
+            <img class="stcImg" id="final" src="STCHOMEPAGE.png">
+            <video class="stcImg" id="prototype" loop autoplay>
+              <source src="WinterJoinGif.mp4" type="video/mp4">
+            </video>
+            <span class="hidden_overview">
+              <p>STC @ UCLA, 2021</p>
+              <br>
+              <p>overview ↓</p>
+              <p>I was tasked with redesigning the website and branding for the STEM transfer community at UCLA. I worked with the existing site, which was hosted on WIX, to improve the user experience and to modernize the org’s visual identity.
+                <p />
+                <br>
+
+              <p>process ↓</p>
+              <p>There were two constraints I worked under: I was required to keep the website on WIX, and I had to adhere to UCLA’s branding principles. The former made the process easier, as I enjoy designing with limitations and adapting an old
+                aesthetic into a new form. This was not the case for the latter; I found that WIX as a site builder presented limitations in areas I did not appreciate- I found myself unable to flexibly design the site structure and found that I
+                couldn't exactly implement the UX system I had in mind for the organization.
+              </p>
+              <br>
+              <p>note ↓</p>
+              <p>I also created graphics for various social media accounts, and redesigned the org's logos using typefaces from velvetyne.</p>
+
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learnidy -->
+      <div class="item" id="learnidy">
+        <span style="cursor:pointer" onclick="openNav('learnidyOverlay')">
+          <img class="static" src="learnidy.jpg">
+          <img class="active" src="learnidy.gif" />
+
+          <div class="caption">
+            <div class="leftCaption">
+              <span class="title">Learnidy</span> <br> <span class="category">Design</span>
+            </div>
+            <div class="rightCaption">
+              2021
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div id="learnidyOverlay" class="overlay">
+        <div class="overlayHeader">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav('learnidyOverlay')">close project</a>
+        </div>
+        <div class="overlay-content">
+          <div class="overview">
+            <p>Learnidy, 2021</p>
+            <br>
+            <p>overview ↓</p>
+            <p> I designed a call-to-action window for the digital education tool Learnidy, to be triggered when the user exits the platform after making changes to their work.
+              <p />
+              <br>
+            <p>process ↓</p>
+            <p>It was important to incentivize signing up by reminding the user of what they had done on the platform, so I decided to include a diagram containing an example of a full schedule to emphasize the work that would be lost if they were to
+              exit without signing up.
+            </p>
+            <br>
+            <p>note ↓</p>
+            <p>While discussing with the founders, I noted how the specific appeal of a platform or application (i.e. convenience or effectiveness) affects what type of incentive structure should be implemented.</p>
+            </p>
+          </div>
+
+          <div class="wrap">
+            <a href="https://learnidy.com/" id="link">learnidy.com ↗</a>
+            <img class="learnidyImg" id="final" src="learnidy.gif" />
+            <span class="hidden_overview">
+              <p>Learnidy, 2021</p>
+              <br>
+              <p>overview ↓</p>
+              <p> I designed a call-to-action window for the digital education tool Learnidy, to be triggered when the user exits the platform after making changes to their work.
+                <p />
+                <br>
+              <p>process ↓</p>
+              <p>It was important to incentivize signing up by reminding the user of what they had done on the platform, so I decided to include a diagram containing an example of a full schedule to emphasize the work that would be lost if they were to
+                exit without signing up.
+              </p>
+              <br>
+              <p>note ↓</p>
+              <p>While discussing with the founders, I noted how the specific appeal of a platform or application (i.e. convenience or effectiveness) affects what type of incentive structure should be implemented.</p>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- personal -->
+      <div class="item" id="meganmai">
+        <span style="cursor:pointer" onclick="openNav('meganOverlay')">
+          <img class="static" src="mmweb.jpg" />
+          <img class="active" src="mmweb.gif" />
+          <div class="caption">
+            <div class="leftCaption">
+              <span class="title">meganm.ai</span> <br> <span class="category">Design + Development</span>
+            </div>
+            <div class="rightCaption">
+              2022
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div id="meganOverlay" class="overlay">
+        <div class="overlayHeader">
+          <button id="prototypeButton" type="button" class="overlayNav" onclick="toggleImg('meganImg','wireframe')">wireframe</button>
+          <button id="prototypeButton" type="button" class="overlayNav" onclick="toggleImg('meganImg','prototype')">prototype</button>
+          <button type="button" class="overlayNav" onclick="toggleImg('meganImg','final')">final</button>
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav('meganOverlay')">close project</a>
+        </div>
+        <div class="overlay-content">
+          <div class="overview">
+            <p>meganm.ai, 2022</p>
+            <br>
+            <p>overview ↓</p>
+            <p> When I graduated college the summer of 2021, I realized I hadn't gotten the chance to take a web development course during my time at college. I took on my first client for design, craftili, and found that the design process was greatly hindered by my lack of experience in web development. This, combined with (and partly related to) poor communication with the developers led to the final product greatly differing from my design. Shortly after, I decided to dedicate my time to learning front-end basics. Coming out of a year and a half of online learning, I was not enthusiastic about sitting in on more lecture videos. I instead decided to chip away at the basics by setting out to create a website. The process certainly was not linear, and I knew that taking a course would have been more efficient, but I found that messing up profusely forced me to learn what the best practices are, and why it is that they are the best. I came away from this experience eager to learn more, and more willing to make mistakes than ever. </p>
+              <br>
+            <p>process ↓</p>
+            <p>I started from the ground up, toying with basic elements. I found that the real challenge wasn't the content itself, but rather knowing what questions to ask, and how to ask them. I started over multiple times. My number one priority was simplicity. I'd seen many cool, complicated and sometimes artistically daring websites and had to resist the urge to do the same; while I loved the aesthetics of these projects, I had to remember I was limited by my skill, and by the appeal of prospective employers. I needed a website that acted as an appropriate substrate on which I could demonstrate my understanding of usability.
+            </p>
+
+          </div>
+
+          <div class="wrap">
+            <a href="index.html" id="link">you're here right now!↗</a>
+            <img class="learnidyImg" id="final" src="learnidy.gif" />
+            <span class="hidden_overview">
+              <p>Learnidy, 2021</p>
+              <br>
+              <p>overview ↓</p>
+              <p> I designed a call-to-action window for the digital education tool Learnidy, to be triggered when the user exits the platform after making changes to their work.
+                <p />
+                <br>
+              <p>process ↓</p>
+              <p>It was important to incentivize signing up by reminding the user of what they had done on the platform, so I decided to include a diagram containing an example of a full schedule to emphasize the work that would be lost if they were to
+                exit without signing up.
+              </p>
+              <br>
+              <p>note ↓</p>
+              <p>While discussing with the founders, I noted how the specific appeal of a platform or application (i.e. convenience or effectiveness) affects what type of incentive structure should be implemented.</p>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  <div id="footer" class="footer">
+    <div class="contact">
+      Contact: mpmai99@g.ucla.edu, <a id="LinkedIn" href="https://www.linkedin.com/in/meganmai99/">LinkedIn,</a> <a id="Resume" href="resume_eng_dec2021.pdf">Resume</a>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+  <script type="text/javascript" src="web2.js"></script>
+
+</body>
+
+</html>
