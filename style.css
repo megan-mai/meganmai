@@ -283,7 +283,7 @@ font-size: 14px;
 .overlay .closebtn {
   position: sticky;
   margin-left:auto;
-  margin-right:0;
+  margin-right:8px;
   color: black;
   font-size: 14px;
   text-align: right;
