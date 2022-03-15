@@ -210,6 +210,11 @@ text-decoration: underline;
   left: 3vw;
 }
 
+#craftiliPic{
+  display: none;
+}
+
+
 .footer {
   padding-top: 18px;
   margin-left: 0px;
@@ -390,6 +395,15 @@ text-decoration: underline;
     .static {
       display: none;
     }
+
+#craftiliVid{
+  display: none;
+}
+    #craftiliPic{
+      display: block;
+    }
+
+
     .overlay{
       width: 91vw;
       overflow-x: hidden;
