@@ -350,6 +350,7 @@ text-decoration: underline;
  height: 88vh;
  border-color: red;
  padding-right: 150px;
+ overflow: visible;
 }
 
 .hidden_overview{
